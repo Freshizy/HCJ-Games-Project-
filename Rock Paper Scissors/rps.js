@@ -74,3 +74,6 @@ function getResult (){
 
 
 
+/* As beginner programmer i completely understand that there is a quicker way to solve the computation needed to display the randomly generated
+ numbers from 1 to 3 assigned one of the three output options. As a standalone, the code is quite verbose and easy to read and gets the job done.
+ Moving forward on to the next projects the logic and methodology will progressively introduce more complex functionality */
