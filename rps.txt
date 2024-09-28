@@ -1,0 +1,1 @@
+In this game we play rock paper scissors where we will check for a win loss or draw against a computer that randomly selects either rock paper or scissors.
