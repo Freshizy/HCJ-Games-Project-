@@ -11,12 +11,33 @@ const resultDisplay = document.getElementById('result')
 
 const possibleChoices = document.querySelectorAll('button')
 let userChoice
-
+let computerChoice
 possibleChoices.forEach(choice => choice.addEventListener('click', (e) => {
     userChoice = e.target.id
     userChoiceDisplay.innerHTML = userChoice
-    
+    // when user clicks on either option the game will also generate the computers choice
+    generateComputerChoice()
 }))   
+
+// here is the function defined for the computer's choice.
+function generateComputerChoice() {
+    
+    /* here we can generate a random number from 0-1 * 3(<-- number of buttons)... for readability i added 1
+     so than later when defining what each number represents its easier to work between 1 2 or 3 */
+
+    const randomNumber = Math.floor(Math.random() * possibleChoices.length + 1)
+
+    if (randomNumber === 1){
+        computerChoice = 'Rock'
+    }
+    if (randomNumber === 2){
+        computerChoice = 'Paper'
+    }
+    if (randomNumber === 3){
+        computerChoice = 'Scissors'
+    }
+    computerChoiceDisplay.innerHTML = computerChoice
+}
 
 
 
